@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="app-header">
+            <h1>Todo</h1>
+            <p class="subtitle">Bugungi vazifalaring</p>
+        </header>
+
+        <form id="todo-form" class="todo-form">
+            <input type="text" id="todo-input" placeholder="Yangi vazifa qo'shish..." required autocomplete="off">
+            <button type="submit" aria-label="Qo'shish">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="12" y1="5" x2="12" y2="19"/>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+            </button>
+        </form>
+
+        <p id="error" class="error hidden"></p>
+
+        <ul id="todo-list" class="todo-list"></ul>
+
+        <p id="empty-state" class="empty-state hidden">Hali vazifalar yo'q. Birinchisini qo'sh!</p>
+
+        <footer class="app-footer">
+            <span id="todo-count">0 ta vazifa</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
